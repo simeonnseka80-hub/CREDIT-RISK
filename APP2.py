@@ -14,7 +14,7 @@ st.set_page_config(page_title="Credit Risk AI", page_icon="💳", layout="wide")
 # ==========================================
 # Utilise tes fichiers actuels (Random Forest ou autre)
 try:
-    model = joblib.load("modele_credit_rf.pkl")  # Nom mis à jour ici
+    model = joblib.load("modele_credit_rf_compressed.pkl")  # Nom mis à jour ici
     scaler = joblib.load("scaler.pkl")
     features_list = joblib.load("features_list.pkl") # Chargement des colonnes
 except FileNotFoundError:
